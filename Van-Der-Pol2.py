@@ -24,8 +24,8 @@ def graph(mu):
         y[i+1, 0:n] = y[i, 0:n] + (1/6) * (k1 + 2*k2 + 2*k3 + k4)
     return(y[0:n, 0], y[0:n, 1])
 
-for mu in arange(0.01, 3.0, 0.1):
-    y1, y2 = graph(mu)
+for main_mu in arange(0.01, 3.0, 0.1):
+    y1, y2 = graph(main_mu)
     plot(y1,y2)
 
 xlabel('Position')
